@@ -6,7 +6,10 @@ package es.iesmz.ed.algoritmes;
 public class Hyperpar {
 
     private final long numero;
-
+    /**
+     * Constructor para el comprobador de que todos los dígitos de un número son pares.
+     * @param numero el número sobre el que se realizará la comprobación.
+     */
     public Hyperpar(long numero) {
         this.numero = numero;
     }

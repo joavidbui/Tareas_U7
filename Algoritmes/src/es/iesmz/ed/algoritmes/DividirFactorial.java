@@ -8,6 +8,11 @@ public class DividirFactorial {
     int numerador;
     int denominador;
 
+    /**
+     * Constructor para la calculadora de divisiones de factoriales.
+     * @param numerador el dividendo con el que se realizará el cálculo.
+     * @param denominador el divisor con el que se realizará el cálculo.
+     */
     public DividirFactorial(int numerador, int denominador) {
         this.numerador = numerador;
         this.denominador = denominador;

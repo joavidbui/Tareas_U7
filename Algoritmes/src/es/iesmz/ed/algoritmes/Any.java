@@ -9,6 +9,10 @@ import java.util.List;
 public class Any {
     long numero;
 
+    /**
+     * Constructor para el comprobador de cantidad de dígitos diferentes.
+     * @param numero long sobre que el que se ejecutará la función.
+     */
     public Any(long numero) {
         this.numero = numero;
     }
