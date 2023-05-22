@@ -1,5 +1,8 @@
 package es.iesmz.ed.algoritmes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Any {
     long numero;
 
@@ -8,7 +11,14 @@ public class Any {
     }
 
     public int digitsDiferents(){
-        int res = 0;
-        return res;
+        List<Character> uniqueNumbers = new ArrayList<>();
+
+        long unsignedNumero = Math.abs(numero);
+        char[] numeroArray = String.valueOf(unsignedNumero).toCharArray();
+
+        for (Character c : numeroArray) {
+            if (!uniqueNumbers.contains(c)) uniqueNumbers.add(c);
+        }
+        return uniqueNumbers.size();
     }
 }
