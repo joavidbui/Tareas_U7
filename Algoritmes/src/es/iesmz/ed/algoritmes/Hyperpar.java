@@ -1,5 +1,8 @@
 package es.iesmz.ed.algoritmes;
 
+/**
+ * La clase hyperpar contiene un número long y una función para determinar si es hyperpar o no.
+ */
 public class Hyperpar {
 
     private final long numero;
@@ -8,6 +11,10 @@ public class Hyperpar {
         this.numero = numero;
     }
 
+    /**
+     * Función que calcula si todos los dígitos del atributo numero son pares.
+     * @return boolean
+     */
     public boolean esHyperPar() {
         String hyperPar = String.valueOf(Math.abs(this.numero));
         boolean esHyperPar = true;
