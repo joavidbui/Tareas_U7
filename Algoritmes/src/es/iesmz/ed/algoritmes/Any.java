@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * La clase contiene un atributo número y un método para determinar cuantos dígitos diferentes tiene.
+ * Clase con un número y un método para determinar cuantos dígitos diferentes tiene.
  */
 public class Any {
     long numero;

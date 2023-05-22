@@ -1,7 +1,7 @@
 package es.iesmz.ed.algoritmes;
 
 /**
- * Clase que contiene dos atributos, numerador y denominador; y una función para calcular el resultado de la división
+ * Clase con dos atributos, numerador y denominador; y una función para calcular el resultado de la división
  * de sus factoriales.
  */
 public class DividirFactorial {
