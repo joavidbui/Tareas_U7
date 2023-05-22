@@ -9,7 +9,15 @@ public class Hyperpar {
     }
 
     public boolean esHyperPar() {
-        boolean esHyperPar = false;
+        String hyperPar = String.valueOf(Math.abs(this.numero));
+        boolean esHyperPar = true;
+        for (int i = 0; i < hyperPar.length(); i++) {
+            int currentDigit = Character.getNumericValue(hyperPar.charAt(i));
+            if (currentDigit % 2 != 0) {
+                esHyperPar = false;
+                break;
+            }
+        }
         return esHyperPar;
     }
 }
