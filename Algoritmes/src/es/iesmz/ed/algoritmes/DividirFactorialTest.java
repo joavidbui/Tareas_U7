@@ -8,30 +8,34 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class DividirFactorialTest {
     static DividirFactorial dividirFactorial;
-    static float expectedFloat;
-    static float actualFloat;
+    static int expectedInt;
+    static int actualInt;
     @BeforeEach
     void setUp() {
         dividirFactorial = null;
-        expectedFloat = 0f;
-        actualFloat = 0f;
+        expectedInt = 0;
+        actualInt = 0;
     }
     @ParameterizedTest
     @MethodSource("inputsShouldReturnHyperPar")
         // six numbers
     void shouldReturnHyperPar(int numerador, int denominador, int expectedArgument) {
         dividirFactorial = new DividirFactorial(numerador, denominador);
-        expectedFloat = expectedArgument;
-        actualFloat = dividirFactorial.calcula();
-        Assertions.assertEquals(expectedFloat, actualFloat);
+        expectedInt = expectedArgument;
+        actualInt = dividirFactorial.calcula();
+        Assertions.assertEquals(expectedInt, actualInt);
     }
     private static Stream<Arguments> inputsShouldReturnHyperPar() {
         return Stream.of(
-                Arguments.of(1, 1, 1)
+                Arguments.of(9, 7, 72),
+                Arguments.of(13, 11, 156),
+                Arguments.of(10, 3, 604800),
+                Arguments.of(1, 1, 1),
+                Arguments.of(0, 1, 1),
+                Arguments.of(1, 0, 1),
+                Arguments.of(0, 0, 1)
         );
     }
 }

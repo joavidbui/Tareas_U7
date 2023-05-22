@@ -9,9 +9,12 @@ public class DividirFactorial {
         this.denominador = denominador;
     }
 
-    public float calcula() {
-        float res = 0f;
-
+    public int calcula() {
+        System.out.println(numerador + " " + denominador);
+        int res = 1;
+        for (int i = numerador; i > denominador ; i--) {
+            res *= i;
+        }
         return res;
     }
 }
