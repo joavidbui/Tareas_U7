@@ -1,7 +1,7 @@
 package es.iesmz.ed.algoritmes;
 
 /**
- * La clase hyperpar contiene un número long y una función para determinar si es hyperpar o no.
+ * Clase con un número long y una función para determinar si todos sus dígitos son pares.
  */
 public class Hyperpar {
 
