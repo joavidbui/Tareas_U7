@@ -7,6 +7,10 @@ public class SumaDescendent {
         this.numero = numero;
     }
 
+    private static void commit() {
+
+    }
+
     public long suma() {
 
         return 1L;
